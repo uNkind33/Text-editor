@@ -1,0 +1,14 @@
+.format-action {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.format-action:focus {
+    outline: none;
+}
+
+.format-action.active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}

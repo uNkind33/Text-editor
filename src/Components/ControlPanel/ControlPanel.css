@@ -1,0 +1,12 @@
+#control-panel {
+    background-color: #fff;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.format-action:hover {
+    cursor: pointer;
+}
