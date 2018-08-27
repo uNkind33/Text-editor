@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import ControlPanel from '../ControlPanel';
 import FileZone from '../FileZone';
 import { getSynonyms } from '../../api';
 
-import './MyEditor.css'
+import './MyEditor.css';
 
 export default class MyEditor extends Component {
     constructor(props) {
@@ -64,7 +64,6 @@ export default class MyEditor extends Component {
         if (!isActive) {
             const filteredFormats = formatActions.filter(item => item !== format);
             const updatedString = this.preceedText(filteredFormats, value);
-
             this.setState({
                 formatActions: filteredFormats,
                 html: updatedString,
@@ -75,7 +74,6 @@ export default class MyEditor extends Component {
                 format,
             ];
             const updatedString = this.preceedText(newFormats, value);
-
             this.setState({
                 formatActions: [...formatActions, format],
                 html: updatedString,
